@@ -1,0 +1,114 @@
+/* Base.scss */
+body {
+    background-image: url(http://www.psdgraphics.com/file/black-honeycomb-metal-mesh.jpg);
+    background-attachment: fixed;
+    background-color: $background-color;
+    color: $color;
+    @include body-font-light;
+    font-size: $base-font-size;
+    line-height: $line-height;
+    margin: 0 auto;
+    //margin: top/bottom left/right:
+    max-width: 600px;
+    width: 100%;
+    
+}
+
+.boxed {
+  border: 5px solid #9ed422;
+    border-radius: 10px;
+background-color: #262626;
+}
+
+p {
+    padding: 0px 15px 20px 15px;
+    margin-top: 0;
+}
+
+
+h1, h2, h3, h4 {
+    background-color: $background-color;
+    @include headline-font;
+    line-height: 1;
+    color: $color2;
+    border-radius: 8px;
+    background-color: $background-color;
+    margin: 0;
+}
+
+h1 {
+    padding: 20px 15px 20px 15px;
+    font-size: em(40px);
+    margin: em(22px) 0 em(30px)em 0;
+}
+
+
+h2 {
+    font-size:em(34px);
+    margin: em(30px) 0 em(8px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+
+h3{
+    font-size: em(24px);
+    margin: em(20px) 0 em(6px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+h4{
+    font-size: em(20px);
+    margin: em(18px) 0 em(2px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+span{
+    font-size: em(24px);
+    padding: 0px 15px 0px 15px;
+    
+}   
+
+time{
+    font-size: em(24px);
+    padding: 0px 15px 0px 15px;
+}   
+
+i, em{
+    @include body-font-light-italic;
+}
+
+b, strong {
+    @include body-font-light-bold;
+}
+
+a {
+    color: $color2;
+    @include body-font-light-bold;
+    line-height: 0;
+    padding: 0 4px 2px 4px;
+    text-decoration: none;
+    transition: color 300ms linear;
+}
+
+a:hover { 
+    color: lighten(#fff,50%);
+    transition: color 300ms linear;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    margin: 0 0 0 2em;
+    padding: em(12px);
+}
+
+ol li {
+    margin-bottom: em(12px);
+}
+
+p + ol {
+    margin: -20px 2em 0 2em;   
+}
+img {
+	height: auto;
+	max-width: 100%;
+}

@@ -1,0 +1,116 @@
+/* Base.scss */
+body {
+    background-image: url(http://www.wallpapershdin.com/walls/abstract-multicolor-binary-grid-numbers-black-background-wide.jpg);
+    background-attachment: fixed;
+    background-size: $background-size;
+    color: $color;
+    @include body-font-light;
+    font-size: $base-font-size;
+    line-height: $line-height;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.boxed {
+    background-color:#393939;
+    opacity: .8;
+}
+
+p {
+    padding: 0px 15px 20px 15px;
+    margin-top: 0;
+}
+
+footer {
+    padding: 0px 15px 20px 15px;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    @include headline-font;
+    line-height: 1;
+    color: #9ed422;
+    border-radius: 8px;
+    margin: 0;
+}
+
+h1 {
+    padding: 20px 15px 20px 15px;
+    font-size: em(40px);
+    margin: em(22px) 0 em(30px)em 0;
+}
+
+
+h2 {
+    font-size:em(34px);
+    margin: em(30px) 0 em(8px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+
+h3{
+    font-size: em(24px);
+    margin: em(20px) 0 em(6px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+h4{
+    font-size: em(20px);
+    margin: em(18px) 0 em(2px) 0;
+    padding: 0px 15px 10px 15px;
+}
+
+span{
+    font-size: em(24px);
+    padding: 0px 15px 0px 15px;
+    
+}   
+
+time{
+    font-size: em(24px);
+    padding: 0px 15px 0px 15px;
+}   
+
+i, em{
+    @include body-font-light-italic;
+}
+
+b, strong {
+    @include body-font-light-bold;
+}
+
+a {
+    background-color: $color2;
+    border-radius: 4px;
+    color: $background-color;
+    @include body-font-light-bold;
+    line-height: 2px;
+    padding: 2px 4px 2px 4px;
+    text-decoration: none;
+    //transition: background-color 300ms linear;
+    //transition: color 300ms linear;
+    transition: all 300ms linear;
+}
+
+a:hover {
+    background-color: lighten($color,20%); 
+    color: darken(#fff,50%);
+    //transition: background-color 300ms linear;
+    //transition: color 300ms linear;
+    transition: all 300ms linear;
+}
+
+ul {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
